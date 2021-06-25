@@ -76,14 +76,4 @@ public class Timespan {
         result = prime * result + end.hashCode();
         return result;
     }
-
-    public static void main(String[] args) {
-        Instant d1 = Instant.parse("2016-02-17T10:00:00Z");
-        Instant d2 = Instant.parse("2016-02-17T11:00:00Z");
-        Timespan ts1 = new Timespan(d1, d2);
-        Instant d3 = Instant.parse("2016-02-17T12:00:00Z");
-        Timespan ts2 = new Timespan(d1, d3);
-        System.out.println(d1.compareTo(d2));
-        System.out.println(d1.isAfter(d2));
-    }
 }

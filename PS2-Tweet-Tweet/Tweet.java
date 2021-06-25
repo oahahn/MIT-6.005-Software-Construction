@@ -106,16 +106,4 @@ public class Tweet {
         final int upper32bits = (int) (id >> bitsInInt);
         return lower32bits ^ upper32bits;
     }
-
-    public static void main(String[] args) {
-        Instant d1 = Instant.parse("2016-02-17T10:00:00Z");
-        Instant d2 = Instant.parse("2016-02-17T11:00:00Z");
-        Tweet tweet1 = new Tweet(1, "alyssa", "is it reasonable to talk about rivest so much?", d1);
-        Tweet tweet2 = new Tweet(2, "bbitdiddle", "rivest talk in 30 minutes " +
-                "#hype", d2);
-//        List<Tweet> tweets = Arrays.asList(tweet1, tweet2);
-        List<Tweet> tweets = Collections.<Tweet>emptyList();
-        System.out.println(tweets.size());
-//        System.out.println(tweets.get(1).timestamp);
-    }
 }
