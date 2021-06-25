@@ -1,4 +1,4 @@
-## Problem Set 2 - 
+## Problem Set 2 - Tweet Tweet
 
 The aim of this problem set was to build a toolbox of methods that can extract information from a set of tweets downloaded from Twitter. Below is a description of the Java classes I implemented for this problem set. 
 
